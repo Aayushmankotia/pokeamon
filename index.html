@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Main container starts-->
+    <div class="mainContainer">
+        <div class="innerContainer">
+            <!--Search box container-->
+            <div class="search-div">
+                <input type="text" id="search-input" class="form-control" placeholder="Enter Pokemon Id or Name">
+                <button id="search-button" class="btn" onclick="checked();">SEARCH</button>
+            </div>
+            <!----->
+            <!--Pokemon's name contianer-->
+            <div id="pokeInfo" class="d-flex justify-content-around bg-light mt-2">
+                <div id="pokemon-name"></div>
+            </div>
+            <!----->
+            <!---Pokemon image container-->
+            <div id="imagePokemon" class="mx-auto w-50"></div>
+            <!------->
+            <!--Section of pokemon types-->
+            <div id="types" class="d-flex gap-1 justify-content-start pl-2 mt-2"></div>
+            <!------>
+            <!---Pokemon info section-->
+            <div class="status mt-2 p-1">
+                <div class="flexclass d-flex justify-content-between bg-light p-1 mb-1">
+                    <div class="p-speed">ID</div>
+                    <div id="pokemon-id"></div>
+                </div>
+                <div class="flexclass d-flex justify-content-between bg-light p-1 mb-1">
+                    <div class="p-speed">SPEED</div>
+                    <div id="speed"></div>
+                </div>
+                <div class="flexclass d-flex justify-content-between bg-light p-1 mb-1">
+                    <div class="p-weight">WEIGHT</div>
+                    <div id="weight"></div>
+                </div>
+                <div class="flexclass d-flex justify-content-between bg-light p-1 mb-1">
+                    <div class="p-height">HEIGHT</div>
+                    <div id="height"></div>
+                </div>
+                <div class="flexclass d-flex justify-content-between bg-light p-1 mb-1">
+                    <div class="p-hp">HP</div>
+                    <div id="hp"></div>
+                </div>
+                <div class="flexclass d-flex justify-content-between bg-light p-1 mb-1">
+                    <div class="p-attack">ATTACK</div>
+                    <div id="attack"></div>
+                </div>
+                <div class="flexclass d-flex justify-content-between bg-light p-1 mb-1">
+                    <div class="p-defence">DEFENSE</div>
+                    <div id="defense"></div>
+                </div>
+                <div class="flexclass d-flex justify-content-between bg-light p-1 mb-1">
+                    <div class="p-sattack">SPECIAL-ATTACK</div>
+                    <div id="special-attack"></div>
+                </div>
+                <div class="flexclass d-flex justify-content-between bg-light p-1 mb-1">
+                    <div class="p-sdefence">SPECIAL-DEFENSE</div>
+                    <div id="special-defense"></div>
+                </div>
+            </div>
+            <!----->
+        </div>
+    </div>
+    <!--Main container closed-->
+    <!--script added-->
+    <script src="script.js"></script>
+</body>
+
+</html>
